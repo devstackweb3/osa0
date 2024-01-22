@@ -44,7 +44,7 @@ jsfile loaded executes itself and fetch data from (url) then map on it to render
     request the body of POST request (newdata)
     deactivate server
 
-    RELOADING PAGE STATEMENT
+    RELOADING SECTION DATA STATEMENT (Dynamic HTML) 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes | HTML Document
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css | CSS Document
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js | JS Doc. server side rendered
