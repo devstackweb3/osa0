@@ -9,11 +9,6 @@ loaded html fetch css file and jsfile
 
 jsfile loaded executes itself and fetch data from (url) then map on it to renders notes
 
-    server-->>browser: State code 302 (Redirection to header's location) | {activation reload}
-    request the body of POST request (newdata)
-    deactivate server
-
-
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
@@ -45,4 +40,12 @@ jsfile loaded executes itself and fetch data from (url) then map on it to render
     newdata = 1 object creation (key value item) in the "notes" array (from the data provided in the api call)
     deactivate server
 
-    Note right of browser: The browser executes the callback function that renders the notes
+    server-->>browser: State code 302 (Redirection to header's location) | {activation reload}
+    request the body of POST request (newdata)
+    deactivate server
+
+    RELOADING PAGE STATEMENT
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes | HTML Document
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css | CSS Document
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js | JS Doc. server side rendered
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json | Array of DATA.json + newData.json
