@@ -2,7 +2,7 @@ sequenceDiagram participant internaut participant browser participant server
 
 post => backend recup data => ajoute newdata localement (storage local) => POST newdata.json en DB (serveur) => return code 201 Created
 
-loaded html, fetch css file, fetch jsfile, fetch array of data.json (coming from server side), and add newdata.json (to server side) 
+loaded html, fetch css file, fetch js file, fetch array of data.json (coming from server side), and add newdata.json (to server side) 
 
 browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
 activate server
@@ -14,7 +14,7 @@ activate server
 server-->>browser: the css file
 deactivate server
 
-browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
 activate server
 server-->>browser: the JavaScript file
 deactivate server
