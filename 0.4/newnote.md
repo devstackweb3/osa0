@@ -34,7 +34,7 @@ jsfile loaded executes itself and fetch data from (url) then map on it to render
     internaut->>browser: formular's button pushed
     attributes action & method: POST
 
-    browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     The note data is POSTED to the URL ending in "/new_note"
     activate server
     newdata = 1 object creation (key value item) in the "notes" array (from the data provided in the api call)
