@@ -33,6 +33,5 @@ jsfile loaded executes itself and fetch data from (url) then map on it to render
     server-->>browser: [{ "content": "My added note", "date": "2023-1-1" }, ... ]
     deactivate server
 
-    Note right of browser: The browser executes the callback function that renders the notes
 
     
