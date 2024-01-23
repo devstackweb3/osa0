@@ -1,6 +1,6 @@
 sequenceDiagram participant internaut participant browser participant server
 
-SPA Méthode Post: ajoute newdata localement (storage local) => POST newdata.json en DB (serveur) => return code 201 Created
+FRENCH SIDE | SPA Méthode Post: ajoute newdata localement (storage local) => POST newdata.json en DB (serveur) => return code 201 Created | FRENCH SIDE
 
 loaded html, fetch css file, fetch js file, fetch array of data.json (coming from server side), and add newdata.json (to server side) 
 
