@@ -1,6 +1,6 @@
 sequenceDiagram participant internaut participant browser participant server
 
-post => backend recup data => ajoute newdata localement (storage local) => POST newdata.json en DB (serveur) => return code 201 Created
+SPA Méthode Post: ajoute newdata localement (storage local) => POST newdata.json en DB (serveur) => return code 201 Created
 
 loaded html, fetch css file, fetch js file, fetch array of data.json (coming from server side), and add newdata.json (to server side) 
 
